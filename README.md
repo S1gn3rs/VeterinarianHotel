@@ -10,12 +10,12 @@
 
 ## Introduction
 
-This project implements a comprehensive management system for a veterinary hotel where habitats, animals, and personnel such as caretakers and veterinarians are managed. Created for the Object-Oriented Programming course, the system manages various entities and calculates satisfaction scores, maintaining records on animal well-being, employee responsibilities, habitats, trees, and vaccinations.
+This project implements a comprehensive management system for a veterinary hotel where habitats, animals, and personnel such as keepers and veterinarians are managed. Created for the Object-Oriented Programming course, the system manages various entities and calculates satisfaction scores, maintaining records on animal well-being, employee responsibilities, habitats, trees, and vaccinations.
 
 ## Features
 
 - **Animal Management**: Register, view, transfer, and calculate satisfaction scores for animals.
-- **Employee Management**: Register and manage responsibilities for caretakers and veterinarians, with satisfaction levels calculated based on workload and expertise.
+- **Employee Management**: Register and manage responsibilities for keepers and veterinarians, with satisfaction levels calculated based on workload and expertise.
 - **Habitat Management**: Define and modify habitats, adjust influence on species, and plant trees.
 - **Tree Lifecycle and Maintenance**: Track and manage seasonal effects on deciduous and evergreen trees, calculate cleaning efforts, and account for age-related changes.
 - **Vaccination Management**: Record and manage vaccinations, assess potential health impacts from incorrect administration.
@@ -38,7 +38,7 @@ The system includes satisfaction algorithms for both animals and employees:
 
 - **Animal Satisfaction**: Based on species, population, habitat size, and compatibility.
 - **Veterinarian Satisfaction**: Influenced by the number of colleagues sharing the responsibility and the workload from animals.
-- **Caretaker Satisfaction**: Reflects workload based on habitat size, animal count, and cleaning effort from trees.
+- **keeper Satisfaction**: Reflects workload based on habitat size, animal count, and cleaning effort from trees.
 
 ## Execution
 
