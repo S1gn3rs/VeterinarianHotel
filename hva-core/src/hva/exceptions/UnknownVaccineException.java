@@ -2,6 +2,9 @@ package hva.exceptions;
 
 import java.io.Serial;
 
+/**
+ * Exception thrown when a vaccine is unknown.
+ */
 public class UnknownVaccineException extends Exception {
 
     /** UnknownVaccineException's class serial number. */

@@ -3,13 +3,10 @@ package hva.seasons;
 import java.io.Serial;
 import java.io.Serializable;
 import hva.Hotel;
-import hva.trees.Deciduous;
-import hva.trees.Evergreen;
 
 
 /**
- * Seasons can change state. Affects the biological cycle and
- * seasonal effort for both deciduous and evergreen trees.
+ * Seasons can change state.
  */
 public abstract class Season implements Serializable {
 
@@ -17,17 +14,30 @@ public abstract class Season implements Serializable {
     @Serial
     private static final long serialVersionUID = 202410232235L;
 
+    /** Index of the season. */
     private SeasonIndex _index;
 
-
+    /**
+     * Creates a new season with a given index.
+     *
+     * @param index The index of the season.
+     */
     public Season(SeasonIndex index) {
         _index = index;
     }
 
 
+    /**
+     * @return The index of the season.
+     */
     public SeasonIndex getIndex() { return _index; }
 
 
+    /**
+     * Gets the int value of the season index.
+     *
+     * @return The int value of the season index.
+     */
     public int getIndexValue() { return _index.getValue(); }
 
 

@@ -1,15 +1,8 @@
 package hva.employees;
 
 import hva.habitats.Habitat;
-import hva.animals.Animal;
-import hva.animals.Species;
-import hva.animals.satisfactions.AnimalSatisfaction;
-import hva.animals.satisfactions.CommunityImpactSatisfaction;
-import hva.exceptions.NoResponsibilityCoreException;
 import hva.employees.satisfactions.KeeperSatisfaction;
 import hva.employees.satisfactions.KeeperWorkLoadSatisfaction;
-import java.util.Map;
-import java.util.TreeMap;
 import java.io.Serial;
 import java.util.Collection;
 
@@ -35,6 +28,11 @@ public class Keeper extends Employee<Habitat> {
     }
 
 
+    /**
+     * Calculates the satisfaction of the keeper.
+     *
+     * @return Keeper's satisfaction.
+     */
     @Override
     public double getSatisfaction(){
         KeeperSatisfaction satisfaction = new

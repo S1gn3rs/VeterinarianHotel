@@ -3,8 +3,6 @@ package hva.animals;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Collection;
 import hva.animals.satisfactions.AnimalSatisfaction;
 import hva.animals.satisfactions.CommunityImpactSatisfaction;
 import hva.habitats.*;
@@ -94,6 +92,12 @@ public class Animal implements Serializable {
     }
 
 
+    /**
+     * Provides a list of vaccinations received by the animal ordered
+     * date of appliance.
+     *
+     * @return a list of vaccinations received by the animal.
+     */
     public List<Vaccination> showMedicalActsOnAnimal() {
         return _vaccinations.stream()
             .collect(Collectors.toList());
@@ -117,11 +121,21 @@ public class Animal implements Serializable {
     }
 
 
+    /**
+     * Transfers the animal to a different habitat.
+     *
+     * @param habitat Habitat to which the animal will be transferred.
+     */
     public void transferToHabitat(Habitat habitat) {
         _habitat = habitat;
     }
 
 
+    /**
+     * Calculates the animal's satisfaction.
+     *
+     * @return Animal's satisfaction.
+     */
     public double getSatisfaction(){
         AnimalSatisfaction satisfaction = new
             CommunityImpactSatisfaction();

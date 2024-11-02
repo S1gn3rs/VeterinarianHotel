@@ -1,16 +1,11 @@
 package hva.seasons;
 
 import hva.Hotel;
-import hva.trees.Deciduous;
-import hva.trees.Evergreen;
-import hva.seasons.SeasonIndex;
 import java.io.Serial;
 
 
 /**
- * Autumn is a season that can change state to Winter. Affects the
- * biological cycle and seasonal effort for both deciduous and
- * evergreen trees.
+ * Autumn is a season that can change state to Winter.
  */
 public class Autumn extends Season {
 
@@ -19,6 +14,9 @@ public class Autumn extends Season {
     private static final long serialVersionUID = 202410091909L;
 
 
+    /**
+     * Creates a new Autumn season.
+     */
     public Autumn() {
         super(SeasonIndex.AUTUMN_INDEX);
     }

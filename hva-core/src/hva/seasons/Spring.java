@@ -1,16 +1,11 @@
 package hva.seasons;
 
 import hva.Hotel;
-import hva.trees.Deciduous;
-import hva.trees.Evergreen;
-import hva.seasons.SeasonIndex;
 import java.io.Serial;
 
 
 /**
- * Spring is a season that can change state to Summer. Affects the
- * biological cycle and seasonal effort for both deciduous and
- * evergreen trees.
+ * Spring is a season that can change state to Summer.
  */
 public class Spring extends Season {
 
@@ -19,6 +14,9 @@ public class Spring extends Season {
     private static final long serialVersionUID = 202410091910L;
 
 
+    /**
+     * Creates a new Spring season.
+     */
     public Spring() {
         super(SeasonIndex.SPRING_INDEX);
     }

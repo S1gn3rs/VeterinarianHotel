@@ -2,6 +2,9 @@ package hva.exceptions;
 
 import java.io.Serial;
 
+/**
+ * Exception thrown when an entry is unrecognized.
+ */
 public class UnrecognizedEntryException extends Exception {
 
     /** UnrecognizedEntryException's class serial number. */

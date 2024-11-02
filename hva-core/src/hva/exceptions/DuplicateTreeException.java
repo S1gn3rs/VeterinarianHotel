@@ -2,6 +2,9 @@ package hva.exceptions;
 
 import java.io.Serial;
 
+/**
+ * Exception thrown when a tree is duplicated.
+ */
 public class DuplicateTreeException extends Exception {
 
     /** DuplicateTreeException's class serial number. */

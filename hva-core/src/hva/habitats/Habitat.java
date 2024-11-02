@@ -1,8 +1,6 @@
 package hva.habitats;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -10,12 +8,10 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 import hva.employees.Keeper;
-import hva.habitats.Influence;
 import hva.search.comparators.IdAnimalComparator;
 import hva.search.comparators.IdTreeComparator;
 import hva.exceptions.UnknownTreeException;
 import hva.animals.*;
-import hva.seasons.*;
 import hva.trees.*;
 import java.util.Set;
 import java.io.Serial;
@@ -261,6 +257,13 @@ public class Habitat implements Serializable {
     }
 
 
+    /**
+     * Provides a list of animals in the habitat ordered
+     * lexicographically by their IDs, without distinction between
+     * uppercase and lowercase.
+     *
+     * @return a list of animals in the habitat.
+     */
     public List<Animal> showAnimalsInHabitat() {
         return _animals.values().stream()
             .sorted(new IdAnimalComparator())
@@ -269,9 +272,11 @@ public class Habitat implements Serializable {
 
 
     /**
-    * Provides a list of all trees in the habitat.
+    * Provides a list of all trees in the habitat ordered
+    * lexicographically by their IDs, without distinction between
+    * uppercase and lowercase.
     *
-    * @return a list of trees.
+    * @return a list of trees in the habitat.
     */
     public List<Tree> showAllTreesInHabitat() {
         return _trees.values().stream()

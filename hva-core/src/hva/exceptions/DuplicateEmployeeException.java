@@ -2,6 +2,9 @@ package hva.exceptions;
 
 import java.io.Serial;
 
+/**
+ * Exception thrown when an employee is duplicated.
+ */
 public class DuplicateEmployeeException extends Exception {
 
     /** DuplicateEmployeeException's class serial number. */

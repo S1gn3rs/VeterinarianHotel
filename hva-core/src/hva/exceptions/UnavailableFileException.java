@@ -3,7 +3,7 @@ package hva.exceptions;
 import java.io.Serial;
 
 /**
- *
+ * Exception thrown when a file is unavailable.
  */
 public class UnavailableFileException extends Exception {
 

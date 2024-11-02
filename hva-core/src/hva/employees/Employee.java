@@ -6,7 +6,6 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.TreeMap;
 import hva.exceptions.NoResponsibilityCoreException;
-import hva.habitats.Habitat;
 
 
 /**
@@ -53,14 +52,30 @@ public abstract class Employee<Responsibility>
     public String getName() { return _name; }
 
 
+    /**
+     * Calculates the employee's satisfaction.
+     *
+     * @return Employee's satisfaction.
+     */
     public abstract double getSatisfaction();
 
 
+    /**
+     * @return Employee's responsibilities.
+     */
     public Collection<Responsibility> getResponsibilities() {
         return _responsibilities.values();
     }
 
 
+    /**
+     * Finds a responsibility by its ID.
+     *
+     * @param idResponsibility Responsibility's ID.
+     * @return The responsibility with the given ID.
+     * @throws NoResponsibilityCoreException If the
+     * responsibility is not found.
+     */
     public Responsibility findResponsibility(String idResponsibility)
         throws NoResponsibilityCoreException {
 
@@ -73,6 +88,12 @@ public abstract class Employee<Responsibility>
     }
 
 
+    /**
+     * Assigns a responsibility to the employee.
+     *
+     * @param responsibility Responsibility to be assigned.
+     * @param key Key to assign the responsibility.
+     */
     public void assignResponsibility(Responsibility responsibility,
         String key) {
 
@@ -81,6 +102,14 @@ public abstract class Employee<Responsibility>
     }
 
 
+    /**
+     * Unassigns a responsibility from the employee.
+     *
+     * @param responsibility Responsibility to be unassigned.
+     * @param key Key to unassign the responsibility.
+     * @throws NoResponsibilityCoreException If the
+     * responsibility is not found.
+     */
     public void unassignResponsibility(Responsibility responsibility,
         String key) throws NoResponsibilityCoreException {
 

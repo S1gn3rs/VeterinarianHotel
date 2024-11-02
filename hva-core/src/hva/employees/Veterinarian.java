@@ -1,14 +1,8 @@
 package hva.employees;
 
 import hva.animals.Species;
-import hva.employees.satisfactions.KeeperSatisfaction;
-import hva.employees.satisfactions.KeeperWorkLoadSatisfaction;
 import hva.employees.satisfactions.VetCareLoadSatisfaction;
 import hva.employees.satisfactions.VetSatisfaction;
-import hva.exceptions.NoResponsibilityCoreException;
-import hva.habitats.Habitat;
-import java.util.Map;
-import java.util.TreeMap;
 import java.io.Serial;
 import java.util.Collection;
 
@@ -35,6 +29,11 @@ public class Veterinarian extends Employee<Species> {
     }
 
 
+    /**
+     * Calculates the satisfaction of the veterinarian.
+     *
+     * @return Veterinarian's satisfaction.
+     */
     @Override
     public double getSatisfaction(){
         VetSatisfaction satisfaction = new VetCareLoadSatisfaction();

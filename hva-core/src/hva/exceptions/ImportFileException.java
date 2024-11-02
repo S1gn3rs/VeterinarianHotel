@@ -2,6 +2,10 @@ package hva.exceptions;
 
 import java.io.Serial;
 
+/**
+ * Exception thrown when an error occurs while
+ * processing an import file.
+ */
 public class ImportFileException extends Exception {
 
     /** ImportFileException's class serial number. */
