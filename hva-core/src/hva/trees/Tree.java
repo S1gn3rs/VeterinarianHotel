@@ -117,7 +117,7 @@ public abstract class Tree implements Serializable {
     public double cleaningEffort() {
         return getBaseCleanDifficulty()
             * seasonalEffort()
-            * (Math.log(age()) + 1);
+            * (Math.log(age() + 1));
     }
 
 
