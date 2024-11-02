@@ -6,7 +6,7 @@
 
 # Veterinary Hotel Management System
 
-🏨🦁 Veterinary Hotel Management System for Object-Oriented Programming 🐾🌳
+🏨🦁 Veterinary Hotel Management System for Object-Oriented Programming made in Java 22 🐾🌳
 
 ## Introduction
 
